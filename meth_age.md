@@ -1,6 +1,7 @@
 #文献：Integration of ‘omics’ data in aging research: from biomarkers to systems biology
 各种组学都有一些跟年龄相关的研究：
-1）Genomics基因组
+
+1）Genomics基因组\n
 载脂蛋白E(apolipoprotein E，ApoE)是一种多态性蛋白，参与脂蛋白的转化与代谢过程；
 APOE的不同亚型，对抗氧化应激效应不同，APOE4与AD密切相关；
 APOE基因上的一个SNP位点，是目前唯一已知与寿命相关的SNP。
