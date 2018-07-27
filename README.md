@@ -10,8 +10,7 @@ GEO地址： https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
 
 1 )  heatmap_R
 
-
-<img src="https://raw.githubusercontent.com/redpanda2017/myscript/master/draw/heatmap_R/heatmap_r.png" width="40%" height="40%" />
+<img src="https://raw.githubusercontent.com/redpanda2017/myscript/master/draw/heatmap_R/heatmap_r.png" width="40%" height="40%"  div align=center/>
 
 <center> heatmap_R.png </center>
 
