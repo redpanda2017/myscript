@@ -1,4 +1,4 @@
-#！/usr/
+#！/usr/bin/python
 import urllib
 from urllib import request
 import re
