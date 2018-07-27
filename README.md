@@ -9,6 +9,9 @@ GEO地址： https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
 2.  draw
 
 做图脚本汇总
+
+1)  heatmap_R
+
 <center>
 <img src="https://raw.githubusercontent.com/redpanda2017/myscript/master/draw/heatmap_R/heatmap_r.png" width="25%" height="25%" />
  heatmap_R.png
