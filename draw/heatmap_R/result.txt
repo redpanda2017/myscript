@@ -1,0 +1,97 @@
+target	fresh1	BGI_RT_0	WB1_RT_0	BGI_RT_4	WB1_RT_4	BGI_RT_7	WB1_RT_7	fresh2	BGI_4_0	WB1_4_0	BGI_4_5	WB1_4_5	BGI_4_8	WB1_4_8	fresh3	BGI_40_0	WB1_40_0	BGI_40_4	WB1_40_4	BGI_40_7	WB1_40_7
+na_antimicrobials	中	中	中	中	中	中	中	低	中	中	中	中	低	中	中	中	中	中	低	中	中
+cefoxitin	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出	检出	检出	检出	检出	检出	检出
+ceftazidime	低	中	低	低	低	低	中	低	低	低	低	低	低	低	高	高	高	高	高	高	高
+ceftriaxone	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出	检出	检出	检出	检出	检出	检出
+chloramphenicol	中	高	低	高	低	中	低	中	高	中	高	中	高	中	中	高	中	高	中	高	中
+erythromycin	中	中	低	中	低	低	低	低	低	低	低	低	低	低	中	低	低	中	中	中	中
+fosfomycin	低	低	低	低	低	低	低	低	低	低	低	低	低	低	高	高	高	高	高	高	高
+penicillin	低	低	中	低	中	低	中	中	低	低	低	低	低	中	高	中	高	中	高	中	高
+sisomicin	中	中	中	中	低	中	低	中	中	低	中	中	中	中	低	中	低	中	低	中	低
+tetracycline	中	高	低	高	低	中	中	高	中	中	中	中	中	中	中	低	低	中	中	中	中
+tobramycin	中	中	中	中	低	中	低	中	中	低	中	中	中	中	低	中	低	中	低	中	低
+dibekacin	中	中	中	中	低	中	低	中	中	低	中	中	中	中	低	中	低	中	低	中	低
+amikacin	中	高	高	高	中	高	中	中	中	中	中	中	中	中	低	中	低	中	低	中	低
+netilmicin	中	中	中	中	中	中	低	中	中	中	中	中	中	中	低	中	低	中	低	中	低
+trimethoprim	高	高	高	高	高	高	高	低	中	中	中	中	中	中	低	中	中	低	低	中	低
+vancomycin	低	中	中	中	中	高	中	高	高	高	高	高	高	中	中	中	低	中	低	中	中
+Antibiotic	中	中	中	中	低	中	中	中	中	低	中	中	中	中	中	中	中	中	中	中	中
+Campylobacter coli	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Campylobacter jejuni	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Clostridium botulinum	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出	检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Clostridium perfringens	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Cronobacter turicensis	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Staphylococcus aureus	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Vibrio cholerae	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Shigella	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Salmonella	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Vibrio	中	中	低	中	中	中	中	低	中	中	中	中	低	中	高	高	高	高	高	高	高
+Streptococcus pneumoniae	中	中	中	中	中	中	中	中	中	中	中	低	低	低	高	中	高	中	中	高	中
+Streptococcus pyogenes	中	高	高	高	高	高	中	高	高	高	高	高	高	高	高	高	高	高	高	高	高
+Streptococcus mutans	中	低	高	低	高	中	高	中	低	中	低	高	低	中	中	低	高	中	低	高	中
+Enterococcus faecium	中	中	中	中	中	中	中	低	中	中	中	中	中	中	低	中	中	中	低	中	低
+Listeria monocytogenes	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Neisseria meningitidis	检出	检出	未检出	未检出	未检出	检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出	未检出	未检出	检出	未检出	未检出	检出
+Klebsiella pneumoniae	中	中	中	中	中	中	中	中	低	中	低	中	中	中	高	高	高	高	高	高	高
+Clostridium difficile	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Bacillus anthracis/cereus/thuringiensis	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Mycobacterium tuberculosis	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Pseudomonas aeruginosa	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出	未检出	检出	未检出	未检出
+Acinetobacter baumannii	低	低	低	低	低	低	低	中	低	中	低	中	中	中	高	中	高	中	高	中	中
+Haemophilus influenzae	未检出	检出	检出	检出	检出	检出	检出	未检出	未检出	未检出	检出	检出	检出	检出	检出	检出	检出	检出	检出	检出	检出
+Enterobacter cloacae	中	低	低	低	低	低	低	低	低	低	低	低	低	低	高	高	高	高	高	高	高
+Fusobacterium nucleatum	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Parvimonas micra	高	低	高	低	高	高	高	低	低	高	低	高	低	中	低	高	低	低	中	中	低
+Proteus	中	低	低	低	低	低	低	低	低	低	低	中	中	低	高	高	高	高	高	高	高
+Yersinia	低	中	低	低	低	低	低	低	低	中	低	低	低	中	高	高	高	高	高	高	高
+Serratia	中	中	中	低	低	低	低	低	低	低	低	低	中	低	高	高	高	高	高	高	高
+Opportunistic pathogen	中	中	中	低	中	中	中	低	低	中	低	中	低	中	高	高	高	高	高	高	高
+Lactococcus lactis	中	低	低	低	低	低	中	中	高	高	高	高	低	高	高	高	高	高	高	高	高
+Leuconostoc mesenteroides	中	中	中	中	低	低	低	高	高	高	高	高	高	高	高	高	高	高	中	高	高
+Streptococcus thermophilus	中	中	中	中	中	中	中	低	低	低	低	低	低	低	中	低	高	低	低	中	中
+Bifidobacterium adolescentis	高	中	高	中	高	中	高	中	低	中	低	中	低	中	低	低	低	低	低	低	低
+Bifidobacterium animalis	低	低	中	低	中	低	中	低	低	低	低	低	低	低	低	低	低	低	低	低	低
+Bifidobacterium bifidum	高	高	高	高	高	高	高	低	低	中	低	中	低	中	低	低	低	低	低	低	低
+Bifidobacterium breve	高	中	高	中	高	中	高	中	低	中	低	中	低	中	低	低	低	低	低	低	低
+Bifidobacterium longum	中	低	中	低	高	中	高	低	低	中	低	中	低	中	低	低	低	低	低	低	低
+Lactobacillus acidophilus	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出
+Lactobacillus casei	高	高	高	高	高	高	高	高	高	高	高	高	高	高	中	中	高	低	中	高	中
+Lactobacillus crispatus	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Lactobacillus delbrueckii	中	中	高	中	低	中	中	高	中	高	低	高	低	高	低	低	中	低	低	中	低
+Lactobacillus fermentum	中	低	中	低	中	低	中	低	中	中	低	中	中	中	低	中	中	中	低	中	中
+Lactobacillus gasseri	未检出	未检出	未检出	未检出	未检出	未检出	检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出	未检出	未检出	未检出
+Lactobacillus helveticus	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出	未检出
+Lactobacillus johnsonii	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Lactobacillus paracasei	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Lactobacillus plantarum	检出	未检出	检出	未检出	检出	未检出	检出	检出	未检出	未检出	未检出	检出	未检出	检出	未检出	未检出	未检出	检出	未检出	检出	检出
+Lactobacillus reuteri	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出	检出	未检出	未检出	未检出	检出	未检出	检出	未检出	检出	检出	未检出
+Lactobacillus rhamnosus	检出	未检出	未检出	未检出	检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Lactobacillus salivarius	低	低	低	低	高	低	中	低	低	中	低	中	低	低	高	低	中	低	低	低	低
+unclassified butyrate-producing bacterium SS3/4	高	高	高	高	高	高	高	高	高	中	高	低	高	低	高	高	高	高	中	高	高
+Faecalibacterium prausnitzii	高	低	低	低	低	低	低	高	中	低	中	低	中	低	高	低	低	中	高	中	高
+Bacteroides thetaiotaomicron	中	高	低	高	低	高	低	中	高	中	高	中	高	低	中	高	中	高	中	高	中
+Bifidobacterium	中	低	高	低	高	中	高	低	低	低	低	中	低	中	低	低	低	低	低	低	低
+Lactobacillus	高	高	高	高	高	高	高	高	中	高	中	高	中	高	低	低	中	低	低	中	低
+Probiotics index	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中
+CHD_index	低	低	低	低	低	低	低	低	低	低	低	低	低	中	中	低	中	低	中	低	低
+CRC_index	中	中	中	中	高	中	中	低	低	中	低	中	低	中	低	中	中	中	低	低	低
+gout_index	中	高	中	高	中	高	中	低	高	中	高	中	高	中	低	高	中	高	低	高	低
+IBD_index	低	中	中	中	中	中	中	低	中	中	低	中	中	中	低	中	中	中	低	中	低
+NAFLD_index	中	中	高	中	高	中	高	低	中	中	中	中	中	中	中	中	高	中	低	中	低
+obese_index	低	中	中	低	中	中	中	低	中	中	低	中	低	中	中	中	中	中	低	中	低
+RA_index	中	中	中	中	中	中	中	中	中	高	中	高	中	高	高	高	高	高	中	中	中
+t2d_index	中	中	中	中	中	中	中	低	低	中	低	中	中	中	低	中	中	中	低	中	低
+AD_index	低	高	低	高	低	中	低	中	高	中	高	中	高	中	中	高	中	高	中	高	中
+Disease	低	中	中	中	中	中	中	低	中	中	中	中	中	中	中	中	中	中	低	中	低
+Shannon index	中	高	中	高	中	高	中	中	高	高	高	中	高	中	中	中	中	高	中	高	中
+BSH	高	高	高	高	高	高	高	中	高	高	高	高	高	中	低	高	中	中	低	中	低
+H2S	中	中	低	高	低	中	低	中	高	中	高	中	高	中	高	高	高	高	高	高	中
+LPS	中	中	中	中	中	中	中	中	高	中	高	中	高	中	中	高	中	中	中	中	中
+SCFA	中	中	低	中	低	中	低	中	中	低	中	低	中	低	低	中	低	低	低	中	低
+TCA	中	中	中	中	低	中	中	低	中	低	中	低	中	中	低	高	中	中	中	中	中
+TMA	低	低	低	低	低	低	低	低	低	中	低	中	低	中	中	低	中	中	中	低	中
+Vitamin B	低	中	低	低	低	低	低	中	中	中	低	中	中	中	中	中	中	中	高	中	中
+Vitamin K	中	低	中	低	中	低	中	低	低	低	低	低	低	中	中	中	高	中	高	中	中
+bftP	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出	未检出
+Function	中	中	中	高	中	高	中	中	中	中	中	中	中	中	中	中	中	中	低	中	中
+All	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中	中
