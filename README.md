@@ -11,3 +11,4 @@ GEO地址： https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
 做图脚本汇总
 
 ![image]( https://raw.githubusercontent.com/redpanda2017/myscript/master/draw/heatmap_R/heatmap_r.png)
+<img src="https://raw.githubusercontent.com/redpanda2017/myscript/master/draw/heatmap_R/heatmap_r.png" width=256 height=256 />
