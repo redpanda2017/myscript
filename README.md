@@ -10,3 +10,4 @@ GEO地址： https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
 
 做图脚本汇总
 
+![image]( myscript/draw/heatmap_R/heatmap_r.png)
