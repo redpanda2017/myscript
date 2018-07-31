@@ -14,5 +14,5 @@ GEO地址： https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
  
 2 ) heatmap_Py
 
-<img src="https://raw.githubusercontent.com/redpanda2017/myscript/master/draw/heatmap_Py/heatmap_py.png width="40%" height="40%"  div align=center />
+<img src="https://raw.githubusercontent.com/redpanda2017/myscript/master/draw/heatmap_Py/heatmap_py.png" width="40%" height="40%"  div align=center />
 
