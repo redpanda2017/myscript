@@ -1,13 +1,19 @@
-#### MySQL建立PGx数据库的过程记录
+#### MySQL 基本的命令
 
 ##### 基础操作
-启动/关闭/重启服务
-    systemctl start/stop/restart  mysqld.service　　　
-查看是服务状态
-    systemctl status  mysqld.service
-进入MySQL
-    mysql -u root -p ****
-
+    启动/关闭/重启服务
+        systemctl start/stop/restart  mysqld.service　　　
+    查看是服务状态
+        systemctl status  mysqld.service
+    进入MySQL
+        mysql -u root -p ****
+    选择数据库
+        use TEST;
+    设置数据库编码
+        set names utf8;
+    导入数据
+        source /var/work/mysql/websites.sql;
+        
 ###### 查询 
 
     SHOW DATABASES;
@@ -69,48 +75,47 @@
     DELETE FROM websites WHERE name='stackoverflow' AND id=8;
 
 ##### 高级操作
+###### 查询
+    SELECT * FROM websites LIMIT 2;
+    SELECT name AS n, country AS c FROM websites;
+    SELECT name, CONCAT(url, ', ', alexa, ', ', country) AS site_info FROM websites;
+    SELECT w.name, w.url, a.count, a.date FROM websites AS w, access_log AS a WHERE a.site_id=w.id and w.name="菜鸟教程";
+    SELECT w.name, a.date, CONCAT(w.id,'\t', a.site_id) AS ID FROM websites as w, access_log as a WHERE a.site_id=w.id;
+    SELECT websites.id, websites.name, access_log.site_id, access_log.count, access_log.date FROM websites, access_log;
+    SELECT websites.id, websites.name, access_log.count, access_log.site_id, access_log.date FROM websites INNER JOIN access_log ON websites.id=access_log.site_id;
+    SELECT websites.id, websites.name, access_log.site_id, access_log.count, access_log.date FROM websites INNER JOIN access_log ON websites.id=access_log.site_id ORDER BY id;
+    SELECT websites.id, websites.name, access_log.site_id, access_log.count, access_log.date FROM websites LEFT JOIN access_log ON websites.id=access_log.site_id ORDER BY id;
+    SELECT websites.id, websites.name, access_log.site_id, access_log.count, access_log.date FROM access_log RIGHT JOIN websites ON websites.id=access_log.site_id ORDER BY id;
+    SELECT country FROM websites UNION SELECT site_id FROM access_log;
+###### 创建表格 插入列
+    CREATE TABLE Websites SELECT * FROM websites;
+    INSERT INTO Websites SELECT * FROM websites;
+    CREATE TABLE Persons (Id_P int NOT NULL, LastName varchar(255) NOT NULL, FirstName varchar(255), Address varchar(255), City varchar(255), PRIMARY KEY (Id_P));
 
-SELECT * FROM websites LIMIT 2;
-SELECT name AS n, country AS c FROM websites;
-SELECT name, CONCAT(url, ', ', alexa, ', ', country) AS site_info FROM websites;
-SELECT w.name, w.url, a.count, a.date FROM websites AS w, access_log AS a WHERE a.site_id=w.id and w.name="菜鸟教程";
-SELECT w.name, a.date, CONCAT(w.id,'\t', a.site_id) AS ID FROM websites as w, access_log as a WHERE a.site_id=w.id;
-SELECT websites.id, websites.name, access_log.site_id, access_log.count, access_log.date FROM websites, access_log;
-SELECT websites.id, websites.name, access_log.count, access_log.site_id, access_log.date FROM websites INNER JOIN access_log ON websites.id=access_log.site_id;
-SELECT websites.id, websites.name, access_log.site_id, access_log.count, access_log.date FROM websites INNER JOIN access_log ON websites.id=access_log.site_id ORDER BY id;
-SELECT websites.id, websites.name, access_log.site_id, access_log.count, access_log.date FROM websites LEFT JOIN access_log ON websites.id=access_log.site_id ORDER BY id;
-SELECT websites.id, websites.name, access_log.site_id, access_log.count, access_log.date FROM access_log RIGHT JOIN websites ON websites.id=access_log.site_id ORDER BY id;
-SELECT country FROM websites UNION SELECT site_id FROM access_log;
-
-CREATE TABLE Websites SELECT * FROM websites;
-INSERT INTO Websites SELECT * FROM websites;
-CREATE TABLE Persons (Id_P int NOT NULL, LastName varchar(255) NOT NULL, FirstName varchar(255), Address varchar(255), City varchar(255), PRIMARY KEY (Id_P));
-/
+    /
     NOT NULL - 指示某列不能存储 NULL 值。
     UNIQUE - 保证某列的每行必须有唯一的值。
     PRIMARY KEY - NOT NULL 和 UNIQUE 的结合。确保某列（或两个列多个列的结合）有唯一标识，有助于更容易更快速地找到表中的一个特定的记录。
     FOREIGN KEY - 保证一个表中的数据匹配另一个表中的值的参照完整性。
     CHECK - 保证列中的值符合指定的条件。
     DEFAULT - 规定没有给列赋值时的默认值。
-/
+    /
 
-####函数
+###### 函数
 
-SELECT AVG(count) AS CountAverage FROM access_log;
-SELECT * FROM access_log WHERE count > (SELECT AVG(count) FROM access_log);
-SELECT COUNT(*) AS nums FROM access_log;
-SELECT COUNT(DISTINCT site_id ) AS nums FROM access_log;
-SELECT * FROM websites WHERE alexa=(SELECT MIN(alexa) AS min_alexa FROM websites);
-SELECT site_id, SUM(access_log.count) AS nums FROM access_log GROUP BY site_id;
-SELECT websites.name,COUNT(access_log.aid) AS nums FROM access_log LEFT JOIN websites ON access_log.site_id=websites.id GROUP BY websites.name;
-SELECT websites.name, SUM(access_log.count) AS nums FROM (access_log INNER JOIN websites ON access_log.site_id=websites.id) GROUP BY websites.name; HAVING SUM(access_log.count) > 200;
-SELECT UCASE(name) FROM websites;
-SELECT LCASE(name) FROM websites;
-SELECT MID(name,1,4) AS ShortTitle FROM websites;
-SELECT name, LENGTH(name) AS Len FROM websites;
-SELECT ROUND(id, 2) FROM websites;
-SELECT ROUND(1.298, 5);
-SELECT name, url, Now() AS date FROM websites;
-SELECT name, url, DATE_FORMAT(Now(),'%Y-%m-%d-%H:%i:%s') AS date FROM websites;
-
-        
+    SELECT AVG(count) AS CountAverage FROM access_log;
+    SELECT * FROM access_log WHERE count > (SELECT AVG(count) FROM access_log);
+    SELECT COUNT(*) AS nums FROM access_log;
+    SELECT COUNT(DISTINCT site_id ) AS nums FROM access_log;
+    SELECT * FROM websites WHERE alexa=(SELECT MIN(alexa) AS min_alexa FROM websites);
+    SELECT site_id, SUM(access_log.count) AS nums FROM access_log GROUP BY site_id;
+    SELECT websites.name,COUNT(access_log.aid) AS nums FROM access_log LEFT JOIN websites ON access_log.site_id=websites.id GROUP BY websites.name;
+    SELECT websites.name, SUM(access_log.count) AS nums FROM (access_log INNER JOIN websites ON access_log.site_id=websites.id) GROUP BY websites.name; HAVING SUM(access_log.count) > 200;
+    SELECT UCASE(name) FROM websites;
+    SELECT LCASE(name) FROM websites;
+    SELECT MID(name,1,4) AS ShortTitle FROM websites;
+    SELECT name, LENGTH(name) AS Len FROM websites;
+    SELECT ROUND(id, 2) FROM websites;
+    SELECT ROUND(1.298, 5);
+    SELECT name, url, Now() AS date FROM websites;
+    SELECT name, url, DATE_FORMAT(Now(),'%Y-%m-%d-%H:%i:%s') AS date FROM websites;
