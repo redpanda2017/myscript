@@ -6,66 +6,67 @@
 查看是服务状态
     systemctl status  mysqld.service
 进入MySQL
-        mysql -u root -p ****
+    mysql -u root -p ****
 
-SHOW DATABASES;
+###### 查询 
 
-SHOW TABLES;
+    SHOW DATABASES;
+    SHOW TABLES;
+    SHOW COLUMNS FROM apps;
+    SELECT * from websites;
+    SELECT DISTINCT country from websites;
+    SELECT * FROM websites WHERE country='CN';
+    SELECT * FROM websites WHERE id between 3 and 4;
+    SELECT * FROM websites WHERE id in(1,2,5);
+    SELECT * FROM websites WHERE url like '%www%';
+    SELECT * FROM websites WHERE url not like '%www%';
 
-SHOW COLUMNS FROM apps;
-
-SELECT * from websites;
-
-SELECT DISTINCT country from websites;
-
-SELECT * FROM websites WHERE country='CN';
-
-SELECT * FROM websites WHERE id between 3 and 4;
-
-SELECT * FROM websites WHERE id in(1,2,5);
-
-SELECT * FROM websites WHERE url like '%www%';
-
-SELECT * FROM websites WHERE url not like '%www%';
-
-/   <br> 查询 EMP 表中 Ename 列中有 M 的值，M 为要查询内容中的模糊信息。<br/> 
-    <br> % 表示多个字值，_ 下划线表示一个字符；<br/> 
-    <br>M% : 为能配符，正则表达式，表示的意思为模糊查询信息为 M 开头的。<br/> 
-    <br>%M% : 表示查询包含M的所有内容。<br/> 
-    <br>%M_ : 表示查询以M在倒数第二位的所有内容。<br/> 
-    <br>% 替代 0 个或多个字符<br/> 
-    <br>_ 替代一个字符<br/> 
-    <br>[charlist]字符列中的任何单一字符<br/> 
-    <br>[^charlist]或[!charlist]    不在字符列中的任何单一字符<br/> 
-/
-
-/
-其中搭配以上通配符可以让LIKE命令实现多种技巧：
-1、LIKE'Mc%' 将搜索以字母 Mc 开头的所有字符串（如 McBadden）。
-2、LIKE'%inger' 将搜索以字母 inger 结尾的所有字符串（如 Ringer、Stringer）。
-3、LIKE'%en%' 将搜索在任何位置包含字母 en 的所有字符串（如 Bennet、Green、McBadden）。
-4、LIKE'_heryl' 将搜索以字母 heryl 结尾的所有六个字母的名称（如 Cheryl、Sheryl）。
-5、LIKE'[CK]ars[eo]n' 将搜索下列字符串：Carsen、Karsen、Carson 和 Karson（如 Carson）。
-6、LIKE'[M-Z]inger' 将搜索以字符串 inger 结尾、以从 M 到 Z 的任何单个字母开头的所有名称（如 Ringer）。
-7、LIKE'M[^c]%' 将搜索以字母 M 开头，并且第二个字母不是 c 的所有名称（如MacFeather）。
-/
+###### 正则表达式
+    /
+    查询 EMP 表中 Ename 列中有 M 的值，M 为要查询内容中的模糊信息。
+    % 表示多个字值，_ 下划线表示一个字符；
+    M% : 为能配符，正则表达式，表示的意思为模糊查询信息为 M 开头的。
+    %M% : 表示查询包含M的所有内容。
+    %M_ : 表示查询以M在倒数第二位的所有内容。
+    % 替代 0 个或多个字符
+    _ 替代一个字符
+    [charlist]字符列中的任何单一字符
+    [^charlist]或[!charlist]    不在字符列中的任何单一字符
+    /
 
 
-SELECT * FROM websites WHERE name REGEXP '^[GFs]';
-/REGEXP 正则表达式/
-
-SELECT * FROM websites WHERE country='CN'AND alexa > 50;
-SELECT * FROM websites ORDER BY alexa;
-SELECT * FROM websites ORDER BY alexa DESC;
-SELECT * FROM websites ORDER BY country,alexa;
-
-INSERT INTO websites (name, url, alexa, country) VALUES ('百度','https://www.baidu.com/','4','CN');
-INSERT INTO websites (name, url, country) VALUES ('stackoverflow', 'http://stackoverflow.com/', 'IND');
-
-UPDATE websites SET alexa='5000', country='USA' WHERE name='菜鸟教程';
-DELETE FROM websites WHERE name='stackoverflow' AND id=8;
+    /
+    其中搭配以上通配符可以让LIKE命令实现多种技巧：
+    1、LIKE'Mc%' 将搜索以字母 Mc 开头的所有字符串（如 McBadden）。
+    2、LIKE'%inger' 将搜索以字母 inger 结尾的所有字符串（如 Ringer、Stringer）。
+    3、LIKE'%en%' 将搜索在任何位置包含字母 en 的所有字符串（如 Bennet、Green、McBadden）。
+    4、LIKE'\_heryl' 将搜索以字母 heryl 结尾的所有六个字母的名称（如 Cheryl、Sheryl）。
+    5、LIKE'[CK]ars[eo]n' 将搜索下列字符串：Carsen、Karsen、Carson 和 Karson（如 Carson）。
+    6、LIKE'[M-Z]inger' 将搜索以字符串 inger 结尾、以从 M 到 Z 的任何单个字母开头的所有名称（如 Ringer）。
+    7、LIKE'M[^c]%' 将搜索以字母 M 开头，并且第二个字母不是 c 的所有名称（如MacFeather）。
+    /
 
 
+    SELECT * FROM websites WHERE name REGEXP '^[GFs]';
+    /REGEXP 正则表达式/
+
+
+###### 排序
+
+    SELECT * FROM websites WHERE country='CN'AND alexa > 50;
+    SELECT * FROM websites ORDER BY alexa;
+    SELECT * FROM websites ORDER BY alexa DESC;
+    SELECT * FROM websites ORDER BY country,alexa;
+
+
+
+###### 插入
+    INSERT INTO websites (name, url, alexa, country) VALUES ('百度','https://www.baidu.com/','4','CN');
+    INSERT INTO websites (name, url, country) VALUES ('stackoverflow', 'http://stackoverflow.com/', 'IND');
+
+###### 更新删除
+    UPDATE websites SET alexa='5000', country='USA' WHERE name='菜鸟教程';
+    DELETE FROM websites WHERE name='stackoverflow' AND id=8;
 
 ##### 高级操作
 
