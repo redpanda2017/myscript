@@ -7,6 +7,10 @@
         systemctl status  mysqld.service
     进入MySQL
         mysql -u root -p ****
+    创建数据库
+        CREATE DATABASE TEST;
+    删除数据库
+        DROP DATABASE TEST;
     选择数据库
         use TEST;
     设置数据库编码
