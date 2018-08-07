@@ -1,8 +1,7 @@
 #### MySQL记录
 
-    启动服务
-        service mysql start　　　
-    关闭服务
-        service mysql stop　　
-    重启服务
-        service restart stop　　
+    启动/关闭/重启服务
+        systemctl start/stop/restart  mysqld.service　　　
+    查看是服务状态
+        ystemctl status  mysqld.service　
+　
