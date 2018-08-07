@@ -9,18 +9,27 @@
         mysql -u root -p ****
 
 SHOW DATABASES;
+
 SHOW TABLES;
+
 SHOW COLUMNS FROM apps;
 
 SELECT * from websites;
+
 SELECT DISTINCT country from websites;
+
 SELECT * FROM websites WHERE country='CN';
+
 SELECT * FROM websites WHERE id between 3 and 4;
+
 SELECT * FROM websites WHERE id in(1,2,5);
+
 SELECT * FROM websites WHERE url like '%www%';
+
 SELECT * FROM websites WHERE url not like '%www%';
-/   查询 EMP 表中 Ename 列中有 M 的值，M 为要查询内容中的模糊信息。
-    % 表示多个字值，_ 下划线表示一个字符；
+
+/   <br> 查询 EMP 表中 Ename 列中有 M 的值，M 为要查询内容中的模糊信息。<br/> 
+    <br> % 表示多个字值，_ 下划线表示一个字符；<br/> 
     M% : 为能配符，正则表达式，表示的意思为模糊查询信息为 M 开头的。
     %M% : 表示查询包含M的所有内容。
     %M_ : 表示查询以M在倒数第二位的所有内容。
