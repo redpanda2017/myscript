@@ -57,3 +57,7 @@ git push origin master
 git remote rm paul
 
 git remote rename pb paul
+
+##### 9.web修改远程库名称后,重新关联
+
+git remote set-url origin git@gitlab.com:redpanda2017/Pharm_plugin_v3.git
